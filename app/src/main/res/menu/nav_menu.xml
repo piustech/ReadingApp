@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reviews"
+        android:title="@string/my_book_reviews"
+        android:icon="@drawable/ic_review" />
+
+    <item
+        android:id="@+id/history"
+        android:title="@string/reading_history"
+        android:icon="@drawable/ic_reading_history" />
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share_my_books_on_whatsapp"
+        android:icon="@drawable/ic_share" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings" />
+
+    <item
+        android:id="@+id/contact"
+        android:title="@string/contact_us"
+        android:icon="@drawable/ic_contact" />
+
+
+</menu>

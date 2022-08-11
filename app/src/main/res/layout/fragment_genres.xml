@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenresFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GenresFragment">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/backArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/romance2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/pink"
+        android:text="@string/romance"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrow" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fantasy2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/fantasy"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/romance2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mystery2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/mystery"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/romance2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/thriller2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/red"
+        android:text="@string/thriller"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/mystery2"
+        app:layout_constraintTop_toBottomOf="@+id/fantasy2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sciFi2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/darkBlue"
+        android:text="@string/sci_fi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mystery2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adventure2"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/green"
+        android:text="@string/adventure"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sciFi2"
+        app:layout_constraintTop_toBottomOf="@+id/thriller2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/classics"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/brown"
+        android:text="@string/classics"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciFi2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/horror"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/less_black"
+        android:text="@string/horror"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/selfHelp"
+        app:layout_constraintTop_toBottomOf="@+id/poetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/historicalFiction"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/muddy"
+        android:text="@string/historical_fiction"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfHelp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/womenFiction"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/pink2"
+        android:text="@string/women_s_fiction"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/classics"
+        app:layout_constraintTop_toBottomOf="@+id/adventure2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/biographies"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/orange"
+        android:text="@string/biographies_autobiographies"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classics" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/poetry"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/turquoise"
+        android:text="@string/poetry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/biographies"
+        app:layout_constraintTop_toBottomOf="@+id/womenFiction" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selfHelp"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/help"
+        android:text="@string/self_help"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biographies" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/trueCrime"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/bloodRed"
+        android:text="@string/true_crime"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/historicalFiction"
+        app:layout_constraintTop_toBottomOf="@+id/horror" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dystopian"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/midnightBlue"
+        android:text="@string/dystopian"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comedy"
+        app:layout_constraintTop_toBottomOf="@+id/trueCrime" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/comedy"
+        android:layout_width="186dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/comedy"
+        android:text="@string/comedy"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historicalFiction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
